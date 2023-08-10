@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAndEFCoreCrud", "WebApiAndEFCoreCrud\WebApiAndEFCoreCrud.csproj", "{228F1960-C283-431A-9644-34BDD16974D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentLibrary", "StudentLibrary\StudentLibrary.csproj", "{9DBB558A-B626-4DB3-AA5C-85FC73CFC4D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228F1960-C283-431A-9644-34BDD16974D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228F1960-C283-431A-9644-34BDD16974D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228F1960-C283-431A-9644-34BDD16974D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228F1960-C283-431A-9644-34BDD16974D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBB558A-B626-4DB3-AA5C-85FC73CFC4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBB558A-B626-4DB3-AA5C-85FC73CFC4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBB558A-B626-4DB3-AA5C-85FC73CFC4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBB558A-B626-4DB3-AA5C-85FC73CFC4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39F9DC40-1A61-4877-B427-02510CADFF4D}
+	EndGlobalSection
+EndGlobal
