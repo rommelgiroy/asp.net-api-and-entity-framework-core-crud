@@ -10,8 +10,8 @@ namespace StudentLibrary.Contract;
 public interface IStudentRepository
 {
     Task<IEnumerable<Student>> GetAllStudents();
-    Task GetStudentById(int id);
+    Task<Student?> GetStudentById(int id);
     Task CreateStudent(Student student);
-    Task UpdateStudent(int id);
-    Task DeleteStudent(int id);
+    Task<Student?> UpdateStudent(Student student, int id);
+    Task<Student?> DeleteStudent(int id);
 }
