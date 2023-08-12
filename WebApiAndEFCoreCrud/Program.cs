@@ -1,17 +1,15 @@
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using StudentLibrary;
 using StudentLibrary.Contract;
 using StudentLibrary.Data;
-using StudentLibrary.Models;
 using StudentLibrary.Repositories;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using StudentLibrary.Models;
+using StudentLibrary.Validations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();    
 
@@ -21,6 +19,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
  
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+
+builder.Services.AddScoped<IValidator<Student>, StudentValidator>();
 
 var app = builder.Build();
 

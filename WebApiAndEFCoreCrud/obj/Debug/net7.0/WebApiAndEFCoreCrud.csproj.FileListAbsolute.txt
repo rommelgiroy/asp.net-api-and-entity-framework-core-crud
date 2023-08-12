@@ -76,3 +76,6 @@ C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.
 C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Oswald\Documents\WebApiAndEFCoreApp\WebApiAndEFCoreCrud\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -63,8 +63,6 @@ public class StudentRepository : IStudentRepository
         existStudent.PhoneNo = student.PhoneNo;
         existStudent.EmailAddress = student.EmailAddress;
 
-
-        //_dbContext.Student.Update(student);
         await _dbContext.SaveChangesAsync();
 
         return student;
