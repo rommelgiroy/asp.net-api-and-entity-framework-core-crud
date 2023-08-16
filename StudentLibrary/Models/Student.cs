@@ -15,15 +15,15 @@ public class Student
     [MaxLength(20)]
     public string? StudentNumber { get; set; }
     [Required]
-    [MaxLength(100)]
+    [MaxLength(50)]
     public string? FirstName { get; set; }
     [Required]
-    [MaxLength(100)]
+    [MaxLength(50)]
     public string? LastName { get; set; }
     [Required]
-    [MaxLength(20)]
+    [MaxLength(11)]
     public string? PhoneNo { get; set; }
     [Required]
-    [MaxLength(100)]
+    [MaxLength(50)]
     public string? EmailAddress { get; set; }
 }

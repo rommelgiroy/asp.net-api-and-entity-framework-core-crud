@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using StudentLibrary.Contract;
 using StudentLibrary.Models;
-using System.Diagnostics.Contracts;
 
 namespace WebApiAndEFCoreCrud.Controllers;
 
@@ -37,20 +34,20 @@ public class StudentsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateStudent(Student student)
+    public async Task<ActionResult> CreateStudent(Student student)
     {
         await _student.CreateStudent(student);
-        return NoContent();
+        return Ok("Student successfully save");
     }
 
     [HttpPut]
-    public async Task<IActionResult> UpdateStudent(Student student, int id)
+    public async Task<ActionResult> UpdateStudent(Student student, int id)
     {
         var existStudent = await _student.UpdateStudent(student, id);
 
         if (existStudent is null) return BadRequest();
 
-        return NoContent();
+        return Ok("Studet successfully updated");
     }
 
     [HttpDelete("{id}")] 

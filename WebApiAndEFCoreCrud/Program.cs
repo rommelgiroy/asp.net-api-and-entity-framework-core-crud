@@ -4,8 +4,7 @@ using StudentLibrary.Data;
 using StudentLibrary.Repositories;
 using FluentValidation.AspNetCore;
 using FluentValidation;
-using StudentLibrary.Models;
-using StudentLibrary.Validations;
+using StudentLibrary.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,10 +16,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
- 
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
-builder.Services.AddScoped<IValidator<Student>, StudentValidator>();
+builder.Services.AddFluentValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
+
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
 var app = builder.Build();
 
